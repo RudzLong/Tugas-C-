@@ -9,3 +9,6 @@ D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project
 D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project.exe
 D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project.pdb
+D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe.config
+D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.exe
+D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.pdb
