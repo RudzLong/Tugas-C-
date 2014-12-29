@@ -17,10 +17,14 @@ namespace Project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 <<<<<<< HEAD
+<<<<<<< HEAD
             Application.Run(new Login());
 =======
             Application.Run(new Form3());
 >>>>>>> origin/master
+=======
+            Application.Run(new Dosen());
+>>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
         }
     }
 }

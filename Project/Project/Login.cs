@@ -50,6 +50,7 @@ Persist Security Info=False;";
                 if(hitung==1)
                 {
                     MessageBox.Show("ID PAssword sudah benar");
+<<<<<<< HEAD
                     Profile profile = new Profile();
                     this.Hide();
                     profile.Show();
@@ -59,6 +60,17 @@ Persist Security Info=False;";
                     //EditDosen ed = new EditDosen();
                     //this.Hide();
                     //ed.Show();
+=======
+                    //Profile profile = new Profile();
+                    //this.Hide();
+                    //profile.Show();
+                    //AddDosen ad = new AddDosen();
+                    //this.Hide();
+                    //ad.Show();
+                    EditDosen ed = new EditDosen();
+                    this.Hide();
+                    ed.Show();
+>>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
                 }
                 else if(hitung>1)
                 {

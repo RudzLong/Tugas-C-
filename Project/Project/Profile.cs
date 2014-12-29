@@ -42,6 +42,7 @@ namespace Project
         {
             
         }
+<<<<<<< HEAD
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -54,5 +55,7 @@ namespace Project
             Mahasiswa mhs = new Mahasiswa();
             mhs.Show();
         }
+=======
+>>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
     }
 }

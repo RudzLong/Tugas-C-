@@ -44,34 +44,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="EditDosen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EditDosen.Designer.cs">
+      <DependentUpon>EditDosen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dosen.Designer.cs">
+      <DependentUpon>Dosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDosen.Designer.cs">
+      <DependentUpon>AddDosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMahasiswa.Designer.cs">
+      <DependentUpon>AddMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mahasiswa.Designer.cs">
+      <DependentUpon>Mahasiswa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Status.cs" />
+    <EmbeddedResource Include="EditDosen.resx">
+      <DependentUpon>EditDosen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dosen.resx">
+      <DependentUpon>Dosen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDosen.resx">
+      <DependentUpon>AddDosen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMahasiswa.resx">
+      <DependentUpon>AddMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mahasiswa.resx">
+      <DependentUpon>Mahasiswa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
