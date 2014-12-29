@@ -29,7 +29,22 @@ Persist Security Info=False;";
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "SELECT * From DosenList";
+                OleDbDataAdapter da = new OleDbDataAdapter(command);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Error Tabel");
+            }
+            connection.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,11 +61,12 @@ Persist Security Info=False;";
         {
             try
             {
-                string query = "DELETE FROM DosenList WHERE [NID] ='" + textBox1.Text + "'";
+                string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1));";
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = query;
+                command.Parameters.AddWithValue("@1", textBox1.Text);
                 command.ExecuteNonQuery();
                 MessageBox.Show("Delete Data Dosen Sukses");
             }
