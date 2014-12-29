@@ -29,26 +29,7 @@ Persist Security Info=False;";
 
         private void button3_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            try
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "SELECT DosenList.* FROM DosenList";
-                OleDbDataAdapter da = new OleDbDataAdapter(command);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridView1.DataSource=dt;
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Error Tabel");
-            }
-            connection.Close();
-=======
 
->>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,19 +46,11 @@ Persist Security Info=False;";
         {
             try
             {
-<<<<<<< HEAD
-                string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1))";
-=======
                 string query = "DELETE FROM DosenList WHERE [NID] ='" + textBox1.Text + "'";
->>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = query;
-<<<<<<< HEAD
-                command.Parameters.AddWithValue("@1", textBox1.Text);
-=======
->>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
                 command.ExecuteNonQuery();
                 MessageBox.Show("Delete Data Dosen Sukses");
             }

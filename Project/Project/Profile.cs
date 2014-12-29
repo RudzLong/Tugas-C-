@@ -42,20 +42,5 @@ namespace Project
         {
             
         }
-<<<<<<< HEAD
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Dosen dosen = new Dosen();
-            dosen.Show();
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            Mahasiswa mhs = new Mahasiswa();
-            mhs.Show();
-        }
-=======
->>>>>>> parent of 32b644c... Revert "Penambahan coding dan bbrp form"
     }
 }
