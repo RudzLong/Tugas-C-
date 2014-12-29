@@ -15,7 +15,7 @@ namespace Project
         {
             bool tmp = false;
             OleDbConnection connectin = new OleDbConnection();
-            connectin.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Long\Documents\TugasC#.accdb;
+            connectin.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\TugasC#.accdb;
 Persist Security Info=False;";
             connectin.Open();
             string query = "Select Priveleges FROM Staff Where ID='" + user + "'";

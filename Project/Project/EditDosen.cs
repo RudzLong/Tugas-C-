@@ -17,7 +17,7 @@ namespace Project
         public EditDosen()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Long\Documents\TugasC#.accdb;
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\TugasC#.accdb;
 Persist Security Info=False;";
         }
 
@@ -47,6 +47,9 @@ Persist Security Info=False;";
                 command.Parameters.Add("@6",OleDbType.Numeric).Value=textBox1.Text;
                 command.ExecuteNonQuery();
                 MessageBox.Show("Update Data Dosen Sukses");
+                this.Hide();
+                Dosen dosen = new Dosen();
+                dosen.Show();
             }
             catch(Exception)
             {
@@ -58,6 +61,11 @@ Persist Security Info=False;";
         private void EditDosen_Load(object sender, EventArgs e)
         {
             label6.Text= "WELCOME" +Status.user;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
         

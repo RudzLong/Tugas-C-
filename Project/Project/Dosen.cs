@@ -17,7 +17,7 @@ namespace Project
         public Dosen()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Long\Documents\TugasC#.accdb;
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\TugasC#.accdb;
 Persist Security Info=False;";
         }
 
@@ -49,7 +49,9 @@ Persist Security Info=False;";
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            EditDosen ed = new EditDosen();
+            this.Hide();
+            ed.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -78,6 +80,11 @@ Persist Security Info=False;";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dosen_Load(object sender, EventArgs e)
         {
 
         }

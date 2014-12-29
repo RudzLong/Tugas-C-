@@ -39,9 +39,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 16);
+            this.button1.Location = new System.Drawing.Point(18, 16);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 23);
+            this.button1.Size = new System.Drawing.Size(89, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Add Dosen";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 45);
+            this.button2.Location = new System.Drawing.Point(18, 45);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 23);
+            this.button2.Size = new System.Drawing.Size(89, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "Edit Dosen";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(105, 16);
+            this.button3.Location = new System.Drawing.Point(126, 16);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 23);
+            this.button3.Size = new System.Drawing.Size(89, 23);
             this.button3.TabIndex = 2;
             this.button3.Text = "List Dosen";
             this.button3.UseVisualStyleBackColor = true;
@@ -70,19 +73,20 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 100);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(549, 419);
+            this.dataGridView1.Size = new System.Drawing.Size(659, 419);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(105, 45);
+            this.button4.Location = new System.Drawing.Point(126, 45);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 23);
+            this.button4.Size = new System.Drawing.Size(104, 23);
             this.button4.TabIndex = 5;
             this.button4.Text = "Delete Dosen";
             this.button4.UseVisualStyleBackColor = true;
@@ -90,25 +94,29 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(238, 45);
+            this.textBox1.Location = new System.Drawing.Point(286, 45);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(119, 22);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Dosen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 570);
+            this.ClientSize = new System.Drawing.Size(708, 570);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Dosen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dosen";
+            this.Load += new System.EventHandler(this.Dosen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

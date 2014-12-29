@@ -70,6 +70,7 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button5
             // 
@@ -223,13 +224,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama";
             // 
-            // Form5
+            // AddMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 290);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form5";
+            this.Name = "AddMahasiswa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Mahasiswa";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
