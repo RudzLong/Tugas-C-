@@ -16,7 +16,11 @@ namespace Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new Login());
+=======
             Application.Run(new Form3());
+>>>>>>> origin/master
         }
     }
 }
