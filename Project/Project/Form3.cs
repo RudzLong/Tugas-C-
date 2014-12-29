@@ -10,21 +10,23 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Mahasiswa : Form
+    public partial class Form3 : Form
     {
-        public Mahasiswa()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
-
+            groupBox1.Visible = false;
         }
 
-        private void Mahasiswa_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            groupBox1.Visible = true;
+            textBox1.Text = "RUDAI";
+            textBox2.Text = "ANDA GANTENG";
         }
     }
 }

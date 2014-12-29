@@ -9,18 +9,3 @@ D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project
 D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project.exe
 D:\Program Files\My Files\Semester V\Framework\Project\Project\obj\Debug\Project.pdb
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe.config
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.exe
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.pdb
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.pdb
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Properties.Resources.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Login.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Profile.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Dosen.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.AddDosen.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.AddMahasiswa.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Mahasiswa.resources
-D:\Program Files\My Files\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.EditDosen.resources
