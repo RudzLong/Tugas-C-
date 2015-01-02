@@ -11,6 +11,28 @@ namespace Project
     {
         public static string user;
         public static Boolean status;
+        public static Boolean cek;
+        public static string NID;
+        public static Boolean untukUpdateDosen()
+        {
+            bool tmp = false;
+            int cekNID;
+            OleDbConnection connectin = new OleDbConnection();
+            connectin.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\TugasC#.accdb;
+Persist Security Info=False;";
+            connectin.Open();
+            string query = "Select NID FROM DosenList Where NID=@1";
+            OleDbCommand cmd = new OleDbCommand(query, connectin);
+            cmd.Parameters.Add("@1", OleDbType.Numeric).Value = NID;
+            OleDbDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                cekNID = reader.GetInt32(0);
+                tmp = true;
+            }
+            connectin.Close();
+            return tmp;
+        }
         public static bool Hak()
         {
             bool tmp = false;

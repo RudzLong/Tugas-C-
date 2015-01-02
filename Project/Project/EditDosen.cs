@@ -68,6 +68,20 @@ Persist Security Info=False;";
             this.Hide();
         }
 
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            Status.NID = textBox1.Text;
+            if (Status.untukUpdateDosen() == false)
+            {
+                MessageBox.Show("NID TIDAK ADA");
+                button4.Enabled = false;
+            }
+            else if(Status.untukUpdateDosen() == true)
+            {
+                button4.Enabled = true;
+            }
+        }
+
         
     }
 }

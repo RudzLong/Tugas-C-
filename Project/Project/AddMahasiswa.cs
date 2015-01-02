@@ -21,5 +21,34 @@ namespace Project
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedIndex == 0)
+            {
+                comboBox3.Items.Remove("TI-A");
+                comboBox3.Items.Remove("TI-B");
+                comboBox3.Items.Add("SI-A");
+                comboBox3.Items.Add("SI-B");
+
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                comboBox3.Items.Add("TI-A");
+                comboBox3.Items.Add("TI-B");
+                comboBox3.Items.Remove("SI-A");
+                comboBox3.Items.Remove("SI-B");
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

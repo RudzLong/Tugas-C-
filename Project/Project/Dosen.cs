@@ -25,25 +25,29 @@ Persist Security Info=False;";
         {
             AddDosen addDosen = new AddDosen();
             addDosen.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "SELECT * From DosenList";
-                OleDbDataAdapter da = new OleDbDataAdapter(command);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Error Tabel");
-            }
+            
+                dataGridView1.Show();
+                try
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * From DosenList";
+                    OleDbDataAdapter da = new OleDbDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error Tabel");
+                }
+            
             connection.Close();
         }
 
@@ -63,6 +67,7 @@ Persist Security Info=False;";
         {
             try
             {
+                textBox1.Show();
                 string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1));";
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
@@ -70,6 +75,11 @@ Persist Security Info=False;";
                 command.CommandText = query;
                 command.Parameters.AddWithValue("@1", textBox1.Text);
                 command.ExecuteNonQuery();
+                command.CommandText = "SELECT * From DosenList";
+                OleDbDataAdapter da = new OleDbDataAdapter(command);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
                 MessageBox.Show("Delete Data Dosen Sukses");
             }
             catch (Exception)
@@ -86,7 +96,44 @@ Persist Security Info=False;";
 
         private void Dosen_Load(object sender, EventArgs e)
         {
+            label1.Hide();
+            textBox1.Hide();
+            button4.Hide();
+            dataGridView1.Hide();
+            if(Status.cek==true)
+            {
+                dataGridView1.Show();
+                try
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * From DosenList";
+                    OleDbDataAdapter da = new OleDbDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error Tabel");
+                }
 
+                connection.Close();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Show();
+            button4.Show();
+            label1.Show();
+            button5.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            button2.Show();
         }
     }
 }

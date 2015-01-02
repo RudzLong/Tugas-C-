@@ -91,15 +91,11 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "Submit";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "TI-A",
-            "TI-B",
-            "SI-A",
-            "SI-B"});
             this.comboBox3.Location = new System.Drawing.Point(92, 193);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
@@ -133,6 +129,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(48, 21);
             this.comboBox2.TabIndex = 9;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -157,6 +154,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(172, 21);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label4
             // 

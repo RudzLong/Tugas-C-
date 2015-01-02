@@ -26,5 +26,11 @@ namespace Project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddMahasiswa addmhs = new AddMahasiswa();
+            addmhs.Show();
+        }
     }
 }
