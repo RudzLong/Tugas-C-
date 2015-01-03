@@ -52,6 +52,7 @@ namespace Project
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            this.Hide();
             Mahasiswa mahasiswa = new Mahasiswa();
             mahasiswa.Show();
         }

@@ -47,7 +47,6 @@ Persist Security Info=False;";
                 {
                     MessageBox.Show("Error Tabel");
                 }
-            
             connection.Close();
         }
 
@@ -68,30 +67,34 @@ Persist Security Info=False;";
             try
             {
                 textBox1.Show();
-                string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1));";
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = query;
-                command.Parameters.AddWithValue("@1", textBox1.Text);
-                command.ExecuteNonQuery();
-                command.CommandText = "SELECT * From DosenList";
-                OleDbDataAdapter da = new OleDbDataAdapter(command);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-                MessageBox.Show("Delete Data Dosen Sukses");
+                Status.NID = textBox1.Text;
+                    string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1));";
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand();
+                    command.Connection = connection;
+                    command.CommandText = query;
+                    command.Parameters.AddWithValue("@1", textBox1.Text);
+                    if (Status.untukUpdateDosen() == true)
+                    {
+                        command.ExecuteNonQuery();
+                        command.CommandText = "SELECT * From DosenList";
+                        OleDbDataAdapter da = new OleDbDataAdapter(command);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                        MessageBox.Show("Delete Data Dosen Sukses");
+                    }
+                    else
+                    {
+                        MessageBox.Show("NID tidak ada");
+                    }
+                    
             }
             catch (Exception)
             {
                 MessageBox.Show("ERROR Delete");
             }
             connection.Close();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Dosen_Load(object sender, EventArgs e)
@@ -134,6 +137,13 @@ Persist Security Info=False;";
         private void button6_Click(object sender, EventArgs e)
         {
             button2.Show();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Profile pf = new Profile();
+            pf.Show();
         }
     }
 }

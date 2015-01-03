@@ -58,14 +58,11 @@ Persist Security Info=False;";
             connection.Close();
         }
 
-        private void EditDosen_Load(object sender, EventArgs e)
-        {
-            label6.Text= "WELCOME" +Status.user;
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Dosen dsn = new Dosen();
+            dsn.Show();
         }
 
         private void textBox1_Leave(object sender, EventArgs e)

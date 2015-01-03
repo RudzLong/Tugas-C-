@@ -7,19 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Project
 {
     public partial class AddMahasiswa : Form
     {
+        private OleDbConnection connection = new OleDbConnection();
         public AddMahasiswa()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\TugasC#.accdb;
+Persist Security Info=False;";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,6 +48,18 @@ namespace Project
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddMahasiswa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Mahasiswa mhs = new Mahasiswa();
+            mhs.Show();
         }
     }
 }

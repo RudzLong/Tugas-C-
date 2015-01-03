@@ -48,11 +48,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNilai.Designer.cs">
+      <DependentUpon>AddNilai.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditDosen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditDosen.Designer.cs">
       <DependentUpon>EditDosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMahasiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMahasiswa.Designer.cs">
+      <DependentUpon>EditMahasiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditNilai.Designer.cs">
+      <DependentUpon>EditNilai.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -99,8 +117,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Status.cs" />
+    <EmbeddedResource Include="AddNilai.resx">
+      <DependentUpon>AddNilai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditDosen.resx">
       <DependentUpon>EditDosen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMahasiswa.resx">
+      <DependentUpon>EditMahasiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditNilai.resx">
+      <DependentUpon>EditNilai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

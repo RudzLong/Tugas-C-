@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class EditDosen
+    partial class EditMahasiswa
     {
         /// <summary>
         /// Required designer variable.
@@ -62,15 +62,14 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(14, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 3);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupBox1.Size = new System.Drawing.Size(332, 289);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button5
             // 
@@ -81,7 +80,6 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Cancel";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -92,7 +90,6 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Submit";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // comboBox3
             // 
@@ -215,7 +212,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(142, 22);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // label1
             // 
@@ -227,16 +223,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama";
             // 
-            // EditDosen
+            // EditMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 318);
+            this.ClientSize = new System.Drawing.Size(354, 303);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "EditDosen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "EditDosen";
+            this.Name = "EditMahasiswa";
+            this.Text = "EditMahasiswa";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
