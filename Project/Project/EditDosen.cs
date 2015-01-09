@@ -21,16 +21,6 @@ namespace Project
 Persist Security Info=False;";
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             try
@@ -53,7 +43,7 @@ Persist Security Info=False;";
             }
             catch(Exception)
             {
-                MessageBox.Show("ERROR Update");
+                MessageBox.Show("ERROR Update", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();
         }
@@ -70,13 +60,18 @@ Persist Security Info=False;";
             Status.NID = textBox1.Text;
             if (Status.untukUpdateDosen() == false)
             {
-                MessageBox.Show("NID TIDAK ADA");
+                MessageBox.Show("NID TIDAK ADA", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 button4.Enabled = false;
             }
             else if(Status.untukUpdateDosen() == true)
             {
                 button4.Enabled = true;
             }
+        }
+
+        private void EditDosen_Load(object sender, EventArgs e)
+        {
+
         }
 
         

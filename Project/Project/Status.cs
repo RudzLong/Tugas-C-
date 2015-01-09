@@ -73,5 +73,26 @@ Persist Security Info=False;";
             connectin.Close();
             return tmp;
         }
+        public static Boolean cekpass()
+        {
+            bool tmp = false;
+            string cekpass;
+            OleDbConnection connectin = new OleDbConnection();
+            connectin.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\TugasC#.accdb;
+Persist Security Info=False;";
+            connectin.Open();
+            string query = "Select Password FROM Staff Where ID=@1";
+            OleDbCommand cmd = new OleDbCommand(query, connectin);
+            cmd.Parameters.AddWithValue("@1", user);
+
+            OleDbDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                cekpass = reader.GetString(0);
+                tmp = true;
+            }
+            connectin.Close();
+            return tmp;
+        }
     }
 }

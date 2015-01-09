@@ -17,31 +17,31 @@ namespace Project
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Profile_Load(object sender, EventArgs e)
         {
             label1.Text = Status.user;
             if (Status.Hak()== true)
             {
                 label2.Text = "Admin";
-
             }
             else
             {
-                label2.Text = "Staff Biasa";
-                //button4.Enabled = false;
-
+                label2.Text = "Staff";
+                radButton4.Visible = false;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        //private void ganti_Click(object sender, EventArgs e)
+        //{
+        //    OpenFileDialog dlg = new OpenFileDialog();
+        //    dlg.Filter = "*JPG FileStyleUriParser(*.jpg)|*.jpg|PNG Files(*png)|*.png|All Files(*.*)|*.*";
             
-        }
+        //    if(dlg.ShowDialog() == DialogResult.OK)
+        //    {
+        //        string piclog = dlg.FileName.ToString();
+        //        pictureBox1.ImageLocation = piclog;
+        //    }
+        //}
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -51,6 +51,42 @@ namespace Project
         }
 
         private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Mahasiswa mahasiswa = new Mahasiswa();
+            mahasiswa.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GantiPass gp = new GantiPass();
+            gp.Show();
+        }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login lg = new Login();
+            lg.Show();
+            Status.status = false;
+        }
+
+        private void radButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GantiPass gp = new GantiPass();
+            gp.Show();
+        }
+
+        private void radButton3_Click(object sender, EventArgs e)
+        {
+            Dosen dosen = new Dosen();
+            this.Hide();
+            dosen.Show();
+        }
+
+        private void radButton4_Click(object sender, EventArgs e)
         {
             this.Hide();
             Mahasiswa mahasiswa = new Mahasiswa();

@@ -70,7 +70,6 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button5
             // 
@@ -157,7 +156,7 @@
             this.comboBox1.Location = new System.Drawing.Point(92, 119);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 21);
+            this.comboBox1.Size = new System.Drawing.Size(105, 21);
             this.comboBox1.TabIndex = 4;
             // 
             // label4
@@ -166,17 +165,17 @@
             this.label4.Location = new System.Drawing.Point(24, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Bagian";
+            this.label4.Text = "Jurusan";
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(146, 84);
+            this.maskedTextBox1.Location = new System.Drawing.Point(95, 84);
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(142, 22);
+            this.maskedTextBox1.Size = new System.Drawing.Size(67, 22);
             this.maskedTextBox1.TabIndex = 3;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
@@ -233,10 +232,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 318);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "EditDosen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditDosen";
+            this.Load += new System.EventHandler(this.EditDosen_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

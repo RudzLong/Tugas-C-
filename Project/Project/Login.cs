@@ -21,24 +21,30 @@ namespace Project
 Persist Security Info=False;";
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void radButton1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void radButton2_Click(object sender, EventArgs e)
+        {
+            Register r = new Register();
+            r.Show();
+        }
+
+        private void radButton3_Click(object sender, EventArgs e)
         {
             try
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM Staff WHERE ID='"+textBox1.Text+"'and Password='"+textBox2.Text+"'";
+                command.CommandText = "SELECT * FROM Staff WHERE ID='" + textBox1.Text + "'and Password='" + textBox2.Text + "'";
                 OleDbDataReader reader = command.ExecuteReader();
                 int hitung = 0;
-                while(reader.Read())
+                while (reader.Read())
                 {
-                    if(textBox1.Text ==reader.GetString(0) && textBox2.Text == reader.GetString(1))
+                    if (textBox1.Text == reader.GetString(0) && textBox2.Text == reader.GetString(1))
                     {
                         hitung = 1;
                         Status.status = true;
@@ -47,34 +53,26 @@ Persist Security Info=False;";
                     }
 
                 }
-                if(hitung==1)
+                if (hitung == 1)
                 {
-                    MessageBox.Show("ID PAssword sudah benar");
                     Profile profile = new Profile();
                     this.Hide();
                     profile.Show();
                 }
-                else if(hitung>1)
+                else if (hitung > 1)
                 {
-                    MessageBox.Show("DATABASE ANDA ADA DUPLIKAT");
+                    MessageBox.Show("Database anda ada DUPLIKAT", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    MessageBox.Show("ID PASSWORD TIDAK SAMA");
+                    MessageBox.Show("ID Password Tidak Sama", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch(Exception x)
+            catch (Exception x)
             {
-                MessageBox.Show("Error Account"+ x);
+                MessageBox.Show("Error Account" + x);
             }
             connection.Close();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        
+        }      
     }
 }

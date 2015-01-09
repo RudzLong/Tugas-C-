@@ -31,7 +31,7 @@ Persist Security Info=False;";
         private void button3_Click(object sender, EventArgs e)
         {
             
-                dataGridView1.Show();
+                radGridView1.Show();
                 try
                 {
                     connection.Open();
@@ -41,7 +41,7 @@ Persist Security Info=False;";
                     OleDbDataAdapter da = new OleDbDataAdapter(command);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    dataGridView1.DataSource = dt;
+                    radGridView1.DataSource = dt;
                 }
                 catch (Exception)
                 {
@@ -55,11 +55,6 @@ Persist Security Info=False;";
             EditDosen ed = new EditDosen();
             this.Hide();
             ed.Show();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -81,7 +76,7 @@ Persist Security Info=False;";
                         OleDbDataAdapter da = new OleDbDataAdapter(command);
                         DataTable dt = new DataTable();
                         da.Fill(dt);
-                        dataGridView1.DataSource = dt;
+                        radGridView1.DataSource = dt;
                         MessageBox.Show("Delete Data Dosen Sukses");
                     }
                     else
@@ -101,11 +96,11 @@ Persist Security Info=False;";
         {
             label1.Hide();
             textBox1.Hide();
-            button4.Hide();
-            dataGridView1.Hide();
+            radButton1.Hide();
+            radGridView1.Hide();
             if(Status.cek==true)
             {
-                dataGridView1.Show();
+                radGridView1.Show();
                 try
                 {
                     connection.Open();
@@ -115,7 +110,7 @@ Persist Security Info=False;";
                     OleDbDataAdapter da = new OleDbDataAdapter(command);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    dataGridView1.DataSource = dt;
+                    radGridView1.DataSource = dt;
                 }
                 catch (Exception)
                 {
@@ -126,24 +121,112 @@ Persist Security Info=False;";
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            textBox1.Show();
-            button4.Show();
-            label1.Show();
-            button5.Hide();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            button2.Show();
-        }
-
         private void button6_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             Profile pf = new Profile();
             pf.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            PrintDosen p = new PrintDosen();
+            p.Show();
+        }
+
+        private void radMenuButtonItem4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Profile pf = new Profile();
+            pf.Show();
+        }
+
+        private void radMenuButtonItem3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void radMenuButtonItem2_Click(object sender, EventArgs e)
+        {
+            PrintDosen p = new PrintDosen();
+            p.Show();
+        }
+
+        private void radMenuButtonItem1_Click(object sender, EventArgs e)
+        {
+            radGridView1.Show();
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "SELECT * From DosenList";
+                OleDbDataAdapter da = new OleDbDataAdapter(command);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                radGridView1.DataSource = dt;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error Tabel");
+            }
+            connection.Close();
+        }
+
+        private void radMenuItem2_Click(object sender, EventArgs e)
+        {
+            AddDosen addDosen = new AddDosen();
+            addDosen.Show();
+            this.Hide();
+        }
+
+        private void radMenuItem3_Click(object sender, EventArgs e)
+        {
+            EditDosen ed = new EditDosen();
+            this.Hide();
+            ed.Show();
+        }
+
+        private void radMenuItem4_Click(object sender, EventArgs e)
+        {
+            label1.Show();
+            textBox1.Show();
+            radButton1.Show();
+        }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox1.Show();
+                Status.NID = textBox1.Text;
+                string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1));";
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = query;
+                command.Parameters.AddWithValue("@1", textBox1.Text);
+                if (Status.untukUpdateDosen() == true)
+                {
+                    command.ExecuteNonQuery();
+                    command.CommandText = "SELECT * From DosenList";
+                    OleDbDataAdapter da = new OleDbDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    radGridView1.DataSource = dt;
+                    MessageBox.Show("Delete Data Dosen Sukses");
+                }
+                else
+                {
+                    MessageBox.Show("NID tidak ada");
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR Delete");
+            }
+            connection.Close();
         }
     }
 }
