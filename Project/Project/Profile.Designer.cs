@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -148,12 +149,6 @@
             this.radMenuItem1.Name = "radMenuItem1";
             this.radMenuItem1.Text = " ";
             // 
-            // Profile
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 194);
-            // 
             // radMenu1
             // 
             this.radMenu1.Controls.Add(this.radButton1);
@@ -168,6 +163,12 @@
             this.radMenu1.TabIndex = 15;
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetroBlue";
+            // 
+            // Profile
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(321, 194);
             this.Controls.Add(this.radMenu1);
             this.Controls.Add(this.radButton2);
             this.Controls.Add(this.label4);
@@ -176,6 +177,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

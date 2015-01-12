@@ -69,16 +69,11 @@ Persist Security Info=False;";
             }
         }
 
-        private void EditDosen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void radButton2_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Dosen dsn = new Dosen();
             dsn.Show();
+            this.Hide();
         }
 
         private void radButton1_Click(object sender, EventArgs e)

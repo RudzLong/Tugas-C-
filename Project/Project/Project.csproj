@@ -103,6 +103,12 @@
     <Compile Include="GantiPass.Designer.cs">
       <DependentUpon>GantiPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrintMahasiswa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     <EmbeddedResource Include="GantiPass.resx">
       <DependentUpon>GantiPass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrintMahasiswa.resx">
       <DependentUpon>PrintMahasiswa.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Koala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

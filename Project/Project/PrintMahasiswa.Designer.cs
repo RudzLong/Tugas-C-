@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrintMahasiswa));
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
@@ -43,13 +44,14 @@
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // Form2
+            // PrintMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 549);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "Form2";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "PrintMahasiswa";
             this.Text = "Print Mahasiswa";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

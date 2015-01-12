@@ -108,9 +108,9 @@ Persist Security Info=False;";
 
         private void radButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Mahasiswa mhs = new Mahasiswa();
             mhs.Show();
+            this.Hide();
         }
 
         private void radButton2_Click(object sender, EventArgs e)

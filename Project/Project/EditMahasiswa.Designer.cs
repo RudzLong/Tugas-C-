@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditMahasiswa));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
@@ -54,9 +55,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.radButton2);
             this.groupBox1.Controls.Add(this.radButton1);
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.comboBox5);
             this.groupBox1.Controls.Add(this.comboBox4);
             this.groupBox1.Controls.Add(this.label8);
@@ -76,14 +77,14 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.groupBox1.Size = new System.Drawing.Size(306, 335);
+            this.groupBox1.Size = new System.Drawing.Size(305, 319);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit";
             // 
             // radButton2
             // 
-            this.radButton2.Location = new System.Drawing.Point(185, 301);
+            this.radButton2.Location = new System.Drawing.Point(179, 281);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(110, 24);
             this.radButton2.TabIndex = 15;
@@ -93,7 +94,7 @@
             // 
             // radButton1
             // 
-            this.radButton1.Location = new System.Drawing.Point(43, 301);
+            this.radButton1.Location = new System.Drawing.Point(37, 281);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(110, 24);
             this.radButton1.TabIndex = 14;
@@ -101,24 +102,10 @@
             this.radButton1.ThemeName = "TelerikMetroBlue";
             this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "SI",
-            "TI",
-            "Manajemen",
-            "Tukang tua phao"});
-            this.comboBox1.Location = new System.Drawing.Point(95, 119);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(119, 21);
-            this.comboBox1.TabIndex = 13;
-            // 
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(125, 270);
+            this.comboBox5.Location = new System.Drawing.Point(116, 251);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(121, 21);
             this.comboBox5.TabIndex = 8;
@@ -126,7 +113,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(126, 231);
+            this.comboBox4.Location = new System.Drawing.Point(116, 217);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 7;
@@ -134,7 +121,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 270);
+            this.label8.Location = new System.Drawing.Point(3, 254);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 13);
             this.label8.TabIndex = 12;
@@ -143,7 +130,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 234);
+            this.label6.Location = new System.Drawing.Point(31, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 13);
             this.label6.TabIndex = 11;
@@ -156,17 +143,19 @@
             "TI-A",
             "TI-B",
             "SI-A",
-            "SI-B"});
-            this.comboBox3.Location = new System.Drawing.Point(92, 193);
+            "SI-B",
+            "MM-A",
+            "MM-B"});
+            this.comboBox3.Location = new System.Drawing.Point(95, 182);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(144, 21);
+            this.comboBox3.Size = new System.Drawing.Size(61, 21);
             this.comboBox3.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 196);
+            this.label7.Location = new System.Drawing.Point(60, 185);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 13);
@@ -185,17 +174,16 @@
             "VI",
             "VII",
             "VIII"});
-            this.comboBox2.Location = new System.Drawing.Point(92, 158);
+            this.comboBox2.Location = new System.Drawing.Point(95, 150);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(48, 21);
             this.comboBox2.TabIndex = 5;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 158);
+            this.label5.Location = new System.Drawing.Point(40, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
@@ -205,7 +193,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 122);
+            this.label4.Location = new System.Drawing.Point(46, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
@@ -225,7 +213,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 84);
+            this.label3.Location = new System.Drawing.Point(8, 87);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
@@ -243,7 +231,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 24);
+            this.label2.Location = new System.Drawing.Point(65, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
@@ -262,21 +250,35 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 49);
+            this.label1.Location = new System.Drawing.Point(57, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "SI",
+            "TI",
+            "Manajemen"});
+            this.comboBox1.Location = new System.Drawing.Point(95, 119);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 16;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
             // EditMahasiswa
             // 
             this.AcceptButton = this.radButton1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 348);
+            this.ClientSize = new System.Drawing.Size(322, 334);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditMahasiswa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditMahasiswa";
@@ -307,8 +309,8 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
         private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.UI.RadButton radButton1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

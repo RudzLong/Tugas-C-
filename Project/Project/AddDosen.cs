@@ -102,9 +102,9 @@ Persist Security Info=False;";
 
         private void radButton1_Click(object sender, EventArgs e)
         {
+            Dosen dsn = new Dosen();
+            dsn.Show();
             this.Hide();
-            Profile profil = new Profile();
-            profil.Show();
         }
 
         private void radButton2_Click(object sender, EventArgs e)

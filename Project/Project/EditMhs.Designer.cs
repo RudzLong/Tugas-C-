@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditMhs));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,11 +46,11 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -178,11 +179,13 @@
             "TI-A",
             "TI-B",
             "SI-A",
-            "SI-B"});
+            "SI-B",
+            "MM-A",
+            "MM-B"});
             this.comboBox3.Location = new System.Drawing.Point(92, 193);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(144, 21);
+            this.comboBox3.Size = new System.Drawing.Size(70, 21);
             this.comboBox3.TabIndex = 6;
             // 
             // label6
@@ -248,16 +251,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit";
             // 
-            // radButton1
-            // 
-            this.radButton1.Location = new System.Drawing.Point(30, 311);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(110, 24);
-            this.radButton1.TabIndex = 15;
-            this.radButton1.Text = "Submit";
-            this.radButton1.ThemeName = "TelerikMetroBlue";
-            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
-            // 
             // radButton2
             // 
             this.radButton2.Location = new System.Drawing.Point(161, 311);
@@ -268,6 +261,16 @@
             this.radButton2.ThemeName = "TelerikMetroBlue";
             this.radButton2.Click += new System.EventHandler(this.radButton2_Click);
             // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(30, 311);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(110, 24);
+            this.radButton1.TabIndex = 15;
+            this.radButton1.Text = "Submit";
+            this.radButton1.ThemeName = "TelerikMetroBlue";
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
+            // 
             // EditMhs
             // 
             this.AcceptButton = this.radButton1;
@@ -276,13 +279,15 @@
             this.ClientSize = new System.Drawing.Size(308, 361);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditMhs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditMhs";
             this.Load += new System.EventHandler(this.EditMhs_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
 
         }

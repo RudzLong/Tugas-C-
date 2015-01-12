@@ -71,7 +71,7 @@ Persist Security Info=False;";
                 else
                 {
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Register Sukses");
+                    MessageBox.Show("Register Sukses, silahkan login");
                     this.Hide();
                 }
             }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditDosen));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
@@ -100,11 +101,13 @@
             "TI-A",
             "TI-B",
             "SI-A",
-            "SI-B"});
+            "SI-B",
+            "MM-A",
+            "MM-B"});
             this.comboBox3.Location = new System.Drawing.Point(92, 193);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(144, 21);
+            this.comboBox3.Size = new System.Drawing.Size(61, 21);
             this.comboBox3.TabIndex = 6;
             // 
             // label7
@@ -151,8 +154,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "SI",
             "TI",
-            "Manajemen",
-            "Tukang tua phao"});
+            "Manajemen"});
             this.comboBox1.Location = new System.Drawing.Point(92, 119);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox1.Name = "comboBox1";
@@ -234,11 +236,11 @@
             this.ClientSize = new System.Drawing.Size(332, 289);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "EditDosen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditDosen";
-            this.Load += new System.EventHandler(this.EditDosen_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();

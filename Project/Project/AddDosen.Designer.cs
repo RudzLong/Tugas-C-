@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddDosen));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,10 +44,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -64,7 +65,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 1);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 3, 5, 3);
@@ -72,6 +73,16 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add";
+            // 
+            // radButton2
+            // 
+            this.radButton2.Location = new System.Drawing.Point(31, 238);
+            this.radButton2.Name = "radButton2";
+            this.radButton2.Size = new System.Drawing.Size(110, 24);
+            this.radButton2.TabIndex = 12;
+            this.radButton2.Text = "Add Dosen";
+            this.radButton2.ThemeName = "TelerikMetroBlue";
+            this.radButton2.Click += new System.EventHandler(this.radButton2_Click);
             // 
             // radButton1
             // 
@@ -93,16 +104,16 @@
             "SI-B",
             "MM-A",
             "MM-B"});
-            this.comboBox3.Location = new System.Drawing.Point(92, 193);
+            this.comboBox3.Location = new System.Drawing.Point(92, 196);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(103, 21);
+            this.comboBox3.Size = new System.Drawing.Size(78, 21);
             this.comboBox3.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 196);
+            this.label7.Location = new System.Drawing.Point(57, 199);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 13);
@@ -130,7 +141,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 158);
+            this.label5.Location = new System.Drawing.Point(37, 161);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
@@ -153,7 +164,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 122);
+            this.label4.Location = new System.Drawing.Point(43, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
@@ -162,7 +173,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(95, 81);
+            this.maskedTextBox1.Location = new System.Drawing.Point(92, 81);
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
@@ -173,7 +184,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 84);
+            this.label3.Location = new System.Drawing.Point(5, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
@@ -182,7 +193,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 46);
+            this.textBox2.Location = new System.Drawing.Point(92, 46);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(142, 22);
@@ -191,7 +202,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 24);
+            this.label2.Location = new System.Drawing.Point(64, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
@@ -200,7 +211,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 15);
+            this.textBox1.Location = new System.Drawing.Point(92, 15);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(67, 22);
@@ -211,38 +222,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 49);
+            this.label1.Location = new System.Drawing.Point(54, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama";
             // 
-            // radButton2
-            // 
-            this.radButton2.Location = new System.Drawing.Point(31, 238);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(110, 24);
-            this.radButton2.TabIndex = 12;
-            this.radButton2.Text = "Add Dosen";
-            this.radButton2.ThemeName = "TelerikMetroBlue";
-            this.radButton2.Click += new System.EventHandler(this.radButton2_Click);
-            // 
             // AddDosen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 304);
+            this.ClientSize = new System.Drawing.Size(315, 288);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "AddDosen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddDosen";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
