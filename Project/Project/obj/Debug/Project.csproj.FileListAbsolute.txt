@@ -59,3 +59,4 @@ C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.GantiP
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.PrintMahasiswa.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.EditMhs.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Register.resources
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache

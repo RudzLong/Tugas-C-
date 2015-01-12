@@ -80,7 +80,7 @@
             // 
             // radButton1
             // 
-            this.radButton1.Location = new System.Drawing.Point(126, 118);
+            this.radButton1.Location = new System.Drawing.Point(126, 110);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(110, 24);
             this.radButton1.TabIndex = 5;
@@ -96,7 +96,7 @@
             // 
             // radButton2
             // 
-            this.radButton2.Location = new System.Drawing.Point(10, 118);
+            this.radButton2.Location = new System.Drawing.Point(10, 110);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(110, 24);
             this.radButton2.TabIndex = 4;
@@ -116,9 +116,10 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.radButton3;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(248, 162);
+            this.ClientSize = new System.Drawing.Size(247, 147);
             this.Controls.Add(this.radButton3);
             this.Controls.Add(this.radButton2);
             this.Controls.Add(this.radButton1);
