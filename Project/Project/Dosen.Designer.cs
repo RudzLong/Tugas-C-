@@ -43,10 +43,13 @@
             this.radMenuButtonItem4 = new Telerik.WinControls.UI.RadMenuButtonItem();
             this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radButton5 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
+            this.radMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -69,6 +72,7 @@
             // 
             // radMenu1
             // 
+            this.radMenu1.Controls.Add(this.radButton5);
             this.radMenu1.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem1,
             this.radMenuButtonItem1,
@@ -196,6 +200,16 @@
             this.radButton1.ThemeName = "TelerikMetroBlue";
             this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
+            // radButton5
+            // 
+            this.radButton5.Location = new System.Drawing.Point(649, 2);
+            this.radButton5.Name = "radButton5";
+            this.radButton5.Size = new System.Drawing.Size(25, 25);
+            this.radButton5.TabIndex = 17;
+            this.radButton5.Text = "-";
+            this.radButton5.ThemeName = "TelerikMetroBlue";
+            this.radButton5.Click += new System.EventHandler(this.radButton5_Click);
+            // 
             // Dosen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,9 +228,11 @@
             this.Text = "Dosen";
             this.Load += new System.EventHandler(this.Dosen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
+            this.radMenu1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,6 +254,7 @@
         private Telerik.WinControls.UI.RadMenuButtonItem radMenuButtonItem4;
         private Telerik.WinControls.UI.RadGridView radGridView1;
         private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadButton radButton5;
 
     }
 }

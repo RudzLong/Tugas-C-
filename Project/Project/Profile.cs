@@ -59,5 +59,10 @@ namespace Project
             Mahasiswa mahasiswa = new Mahasiswa();
             mahasiswa.Show();
         }
+
+        private void radButton5_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

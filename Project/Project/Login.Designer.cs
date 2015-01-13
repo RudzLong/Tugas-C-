@@ -125,6 +125,7 @@
             this.radButton4.TabIndex = 6;
             this.radButton4.Text = "?";
             this.radButton4.ThemeName = "TelerikMetroBlue";
+            this.radButton4.Click += new System.EventHandler(this.radButton4_Click);
             // 
             // Login
             // 

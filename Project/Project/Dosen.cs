@@ -145,5 +145,10 @@ Persist Security Info=False;";
             }
             connection.Close();
         }
+
+        private void radButton5_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

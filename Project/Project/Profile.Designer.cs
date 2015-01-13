@@ -41,6 +41,7 @@
             this.radButton4 = new Telerik.WinControls.UI.RadButton();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
+            this.radButton5 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
@@ -48,6 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             this.radMenu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -112,7 +114,7 @@
             // 
             // radButton2
             // 
-            this.radButton2.Location = new System.Drawing.Point(167, 134);
+            this.radButton2.Location = new System.Drawing.Point(164, 108);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(110, 24);
             this.radButton2.TabIndex = 12;
@@ -164,11 +166,22 @@
             this.radMenu1.Text = "radMenu1";
             this.radMenu1.ThemeName = "TelerikMetroBlue";
             // 
+            // radButton5
+            // 
+            this.radButton5.Location = new System.Drawing.Point(288, 157);
+            this.radButton5.Name = "radButton5";
+            this.radButton5.Size = new System.Drawing.Size(25, 25);
+            this.radButton5.TabIndex = 16;
+            this.radButton5.Text = "-";
+            this.radButton5.ThemeName = "TelerikMetroBlue";
+            this.radButton5.Click += new System.EventHandler(this.radButton5_Click);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 194);
+            this.Controls.Add(this.radButton5);
             this.Controls.Add(this.radMenu1);
             this.Controls.Add(this.radButton2);
             this.Controls.Add(this.label4);
@@ -190,6 +203,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             this.radMenu1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,6 +223,7 @@
         private Telerik.WinControls.UI.RadButton radButton4;
         private Telerik.WinControls.UI.RadMenuItem radMenuItem1;
         private Telerik.WinControls.UI.RadMenu radMenu1;
+        private Telerik.WinControls.UI.RadButton radButton5;
 
 
     }

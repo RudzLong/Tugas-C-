@@ -39,9 +39,7 @@ D:\Downloads\Tugas-C--Fajar\Project\Project\obj\Debug\Project.Properties.Resourc
 D:\Downloads\Tugas-C--Fajar\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 D:\Downloads\Tugas-C--Fajar\Project\Project\obj\Debug\Project.exe
 D:\Downloads\Tugas-C--Fajar\Project\Project\obj\Debug\Project.pdb
-C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe.config
-C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe
-C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.pdb
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.exe
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.EditDosen.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.EditMahasiswa.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.EditMhs.resources
@@ -58,6 +56,9 @@ C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Mahasi
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Properties.Resources.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Register.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
-C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.exe
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.pdb
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe.config
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.exe
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\bin\Debug\Project.pdb
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.CL.resources
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
