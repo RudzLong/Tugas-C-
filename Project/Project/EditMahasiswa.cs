@@ -94,15 +94,5 @@ Persist Security Info=False;";
             }
             connection.Close();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

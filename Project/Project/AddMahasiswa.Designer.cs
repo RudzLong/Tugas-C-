@@ -114,7 +114,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 231);
+            this.label6.Location = new System.Drawing.Point(40, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 13);
             this.label6.TabIndex = 13;
@@ -132,7 +132,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(92, 231);
+            this.comboBox4.Location = new System.Drawing.Point(125, 231);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 7;
@@ -147,7 +147,7 @@
             "SI-B",
             "MM-A",
             "MM-B"});
-            this.comboBox3.Location = new System.Drawing.Point(92, 193);
+            this.comboBox3.Location = new System.Drawing.Point(95, 196);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(70, 21);
@@ -156,7 +156,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 196);
+            this.label7.Location = new System.Drawing.Point(57, 199);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 13);
@@ -175,7 +175,7 @@
             "VI",
             "VII",
             "VIII"});
-            this.comboBox2.Location = new System.Drawing.Point(92, 158);
+            this.comboBox2.Location = new System.Drawing.Point(95, 158);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(48, 21);
@@ -184,7 +184,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 158);
+            this.label5.Location = new System.Drawing.Point(37, 161);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
@@ -198,7 +198,7 @@
             "SI",
             "TI",
             "Manajemen"});
-            this.comboBox1.Location = new System.Drawing.Point(92, 119);
+            this.comboBox1.Location = new System.Drawing.Point(95, 122);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(103, 21);
@@ -207,7 +207,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 122);
+            this.label4.Location = new System.Drawing.Point(43, 125);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
@@ -220,14 +220,14 @@
             this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(59, 22);
+            this.maskedTextBox1.Size = new System.Drawing.Size(67, 22);
             this.maskedTextBox1.TabIndex = 3;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 84);
+            this.label3.Location = new System.Drawing.Point(5, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
@@ -245,7 +245,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 24);
+            this.label2.Location = new System.Drawing.Point(62, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
@@ -263,7 +263,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 49);
+            this.label1.Location = new System.Drawing.Point(54, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);

@@ -60,3 +60,4 @@ C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.Regist
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.exe
 C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.pdb
+C:\Users\Long\Documents\GitHub\Tugas-C-\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache

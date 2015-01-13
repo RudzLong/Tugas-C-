@@ -131,11 +131,11 @@ Persist Security Info=False;";
                 command.Parameters.AddWithValue("@tglmsk", maskedTextBox1.Text);
                 command.ExecuteNonQuery();
                 Status.cek = true;
-                MessageBox.Show("Insert Data Dosen Sukses");
+                MessageBox.Show("Insert Data Mhs Sukses");
                 this.Hide();
-                Dosen dos = new Dosen();
+                Mahasiswa mhs = new Mahasiswa();
                 this.Hide();
-                dos.Show();
+                mhs.Show();
             }
             catch (Exception ex)
             {

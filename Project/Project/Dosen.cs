@@ -218,13 +218,13 @@ Persist Security Info=False;";
                 }
                 else
                 {
-                    MessageBox.Show("NID tidak ada");
+                    MessageBox.Show("NID tidak ada", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
             catch (Exception)
             {
-                MessageBox.Show("ERROR Delete");
+                MessageBox.Show("ERROR Delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();
         }

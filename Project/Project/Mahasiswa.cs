@@ -169,13 +169,13 @@ Persist Security Info=False;";
                     }
                     else
                     {
-                        MessageBox.Show("NIM tidak ada");
+                        MessageBox.Show("NIM tidak ada", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     
             }
             catch (Exception)
             {
-                MessageBox.Show("ERROR Delete");
+                MessageBox.Show("ERROR Delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();    
         }
@@ -273,13 +273,13 @@ Persist Security Info=False;";
                 }
                 else
                 {
-                    MessageBox.Show("NIM tidak ada");
+                    MessageBox.Show("NIM tidak ada", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
             catch (Exception)
             {
-                MessageBox.Show("ERROR Delete");
+                MessageBox.Show("ERROR Delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();    
         }
@@ -309,7 +309,7 @@ Persist Security Info=False;";
                 Status.NIM = textBox2.Text;
                 if (Status.untukUpdateMHS() == false)
                 {
-                    MessageBox.Show("NIM Tidak ada");
+                    MessageBox.Show("NIM Tidak ada", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
