@@ -29,7 +29,7 @@ namespace Project
         private void load_Load(object sender, EventArgs e)
         {
             tmr = new Timer();
-            tmr.Interval = 5000;
+            tmr.Interval = 3000;
             tmr.Start();
             tmr.Tick += timer1_Tick;
         }

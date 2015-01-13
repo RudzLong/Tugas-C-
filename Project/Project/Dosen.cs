@@ -21,77 +21,6 @@ namespace Project
 Persist Security Info=False;";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AddDosen addDosen = new AddDosen();
-            addDosen.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-                radGridView1.Show();
-                try
-                {
-                    connection.Open();
-                    OleDbCommand command = new OleDbCommand();
-                    command.Connection = connection;
-                    command.CommandText = "SELECT * From DosenList";
-                    OleDbDataAdapter da = new OleDbDataAdapter(command);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    radGridView1.DataSource = dt;
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error Tabel");
-                }
-            connection.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            EditDosen ed = new EditDosen();
-            this.Hide();
-            ed.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                textBox1.Show();
-                Status.NID = textBox1.Text;
-                    string query = "DELETE DosenList.NID, DosenList.* FROM DosenList WHERE (((DosenList.NID)=@1));";
-                    connection.Open();
-                    OleDbCommand command = new OleDbCommand();
-                    command.Connection = connection;
-                    command.CommandText = query;
-                    command.Parameters.AddWithValue("@1", textBox1.Text);
-                    if (Status.untukUpdateDosen() == true)
-                    {
-                        command.ExecuteNonQuery();
-                        command.CommandText = "SELECT * From DosenList";
-                        OleDbDataAdapter da = new OleDbDataAdapter(command);
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-                        radGridView1.DataSource = dt;
-                        MessageBox.Show("Delete Data Dosen Sukses");
-                    }
-                    else
-                    {
-                        MessageBox.Show("NID tidak ada");
-                    }
-                    
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("ERROR Delete");
-            }
-            connection.Close();
-        }
-
         private void Dosen_Load(object sender, EventArgs e)
         {
             label1.Hide();
@@ -116,22 +45,8 @@ Persist Security Info=False;";
                 {
                     MessageBox.Show("Error Tabel");
                 }
-
                 connection.Close();
             }
-        }
-
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Profile pf = new Profile();
-            pf.Show();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            PrintDosen p = new PrintDosen();
-            p.Show();
         }
 
         private void radMenuButtonItem4_Click(object sender, EventArgs e)
@@ -215,12 +130,14 @@ Persist Security Info=False;";
                     da.Fill(dt);
                     radGridView1.DataSource = dt;
                     MessageBox.Show("Delete Data Dosen Sukses");
+                    Dosen dsn = new Dosen();
+                    this.Hide();
+                    dsn.Show();
                 }
                 else
                 {
                     MessageBox.Show("NID tidak ada", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
             catch (Exception)
             {

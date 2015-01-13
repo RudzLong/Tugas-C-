@@ -41,9 +41,7 @@ Persist Security Info=False;";
                 this.Hide();
                 Dosen dos = new Dosen();
                 this.Hide();
-                dos.Show();
-                
-                
+                dos.Show();    
             }
             catch(Exception ex)
             {
@@ -83,23 +81,6 @@ Persist Security Info=False;";
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Profile profil = new Profile();
-            profil.Show();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void radButton1_Click(object sender, EventArgs e)
         {
             Dosen dsn = new Dosen();
@@ -128,8 +109,6 @@ Persist Security Info=False;";
                 Dosen dos = new Dosen();
                 this.Hide();
                 dos.Show();
-
-
             }
             catch (Exception ex)
             {

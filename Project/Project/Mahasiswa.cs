@@ -57,146 +57,11 @@ Persist Security Info=False;";
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            AddMahasiswa addmhs = new AddMahasiswa();
-            addmhs.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-             radGridView1.Show();
-                try
-                {
-                    connection.Open();
-                    OleDbCommand command = new OleDbCommand();
-                    command.Connection = connection;
-                    command.CommandText = "SELECT * From Mahasiswa";
-                    OleDbDataAdapter da = new OleDbDataAdapter(command);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    radGridView1.DataSource = dt;
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error Tabel");
-                }
-            connection.Close();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Profile pf = new Profile();
-            pf.Show();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "Update Mahasiswa SET [NilaiAkhir]=@1, [Grade]=@2 WHERE [NIM]=@3";
-                command.Parameters.Add("@1", OleDbType.Numeric).Value = textBox3.Text;
-                if(int.Parse(textBox3.Text)>90)
-                {
-                    command.Parameters.AddWithValue("@2","A");
-                }
-                else if(int.Parse(textBox3.Text)>=85)
-                {
-                    command.Parameters.AddWithValue("@2", "B+");
-                }
-                else if (int.Parse(textBox3.Text) >= 80)
-                {
-                    command.Parameters.AddWithValue("@2", "B");
-                }
-                else if (int.Parse(textBox3.Text) >= 75)
-                {
-                    command.Parameters.AddWithValue("@2", "C+");
-                }
-                else if (int.Parse(textBox3.Text) >= 65)
-                {
-                    command.Parameters.AddWithValue("@2", "C");
-                }
-                else if (int.Parse(textBox3.Text) >= 50)
-                {
-                    command.Parameters.AddWithValue("@2", "D");
-                }
-                else
-                {
-                    command.Parameters.AddWithValue("@2", "E");
-                }
-                command.Parameters.AddWithValue("@3", OleDbType.Numeric).Value = textBox2.Text;
-                command.ExecuteNonQuery();
-                MessageBox.Show("Update Sukses");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error" + ex);
-            }
-            connection.Close();
-        }
-
-        private void radMenuItem2_Click3(object sender, EventArgs e)
-        {
-            PrintMahasiswa p = new PrintMahasiswa();
-            p.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-             try
-            {
-                Status.NIM = textBox1.Text;
-                    string query = "DELETE Mahasiswa.NIM, Mahasiswa.* FROM Mahasiswa WHERE (((Mahasiswa.NIM)=@1));";
-                    connection.Open();
-                    OleDbCommand command = new OleDbCommand();
-                    command.Connection = connection;
-                    command.CommandText = query;
-                    command.Parameters.AddWithValue("@1", textBox1.Text);
-                    if (Status.untukUpdateMHS() == true)
-                    {
-                        command.ExecuteNonQuery();
-                        command.CommandText = "SELECT * From Mahasiswa";
-                        OleDbDataAdapter da = new OleDbDataAdapter(command);
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-                        radGridView1.DataSource = dt;
-                        MessageBox.Show("Delete Data Mahasiswa Sukses");
-                    }
-                    else
-                    {
-                        MessageBox.Show("NIM tidak ada", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("ERROR Delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            connection.Close();    
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            EditMhs em = new EditMhs();
-            em.Show();
-        }
-
         private void radMenuItem2_Click(object sender, EventArgs e)
         {
             this.Hide();
             AddMahasiswa addmhs = new AddMahasiswa();
             addmhs.Show();
-        }
-
-        private void radMenuItem3_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void radMenuButtonItem2_Click(object sender, EventArgs e)
@@ -270,6 +135,9 @@ Persist Security Info=False;";
                     da.Fill(dt);
                     radGridView1.DataSource = dt;
                     MessageBox.Show("Delete Data Mahasiswa Sukses");
+                    Mahasiswa mhs = new Mahasiswa();
+                    this.Hide();
+                    mhs.Show();
                 }
                 else
                 {
@@ -342,7 +210,7 @@ Persist Security Info=False;";
                 command.Connection = connection;
                 command.CommandText = "Update Mahasiswa SET [NilaiAkhir]=@1, [Grade]=@2 WHERE [NIM]=@3";
                 command.Parameters.Add("@1", OleDbType.Numeric).Value = textBox3.Text;
-                if (int.Parse(textBox3.Text) > 90)
+                if (int.Parse(textBox3.Text) >= 90)
                 {
                     command.Parameters.AddWithValue("@2", "A");
                 }
@@ -354,15 +222,15 @@ Persist Security Info=False;";
                 {
                     command.Parameters.AddWithValue("@2", "B");
                 }
-                else if (int.Parse(textBox3.Text) >= 75)
+                else if (int.Parse(textBox3.Text) >= 70)
                 {
                     command.Parameters.AddWithValue("@2", "C+");
                 }
-                else if (int.Parse(textBox3.Text) >= 65)
+                else if (int.Parse(textBox3.Text) >= 60)
                 {
                     command.Parameters.AddWithValue("@2", "C");
                 }
-                else if (int.Parse(textBox3.Text) >= 50)
+                else if (int.Parse(textBox3.Text) >= 40)
                 {
                     command.Parameters.AddWithValue("@2", "D");
                 }
@@ -378,6 +246,9 @@ Persist Security Info=False;";
                 da.Fill(dt);
                 radGridView1.DataSource = dt;
                 MessageBox.Show("Update Sukses");
+                Mahasiswa mhs = new Mahasiswa();
+                this.Hide();
+                mhs.Show();
             }
             catch (Exception ex)
             {

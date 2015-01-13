@@ -31,15 +31,10 @@ FROM DosenList, Mahasiswa;";
             OleDbDataAdapter da = new OleDbDataAdapter(query, connection);
             DataSet1 ds = new DataSet1();
             da.Fill(ds, "DataTable1");
-            CrystalReport1 cr = new CrystalReport1();
+            CrystalReportMhs cr = new CrystalReportMhs();
             cr.SetDataSource(ds);
             crystalReportViewer1.ReportSource = cr;
             connection.Close();
-        }
-
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

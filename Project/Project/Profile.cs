@@ -31,39 +31,6 @@ namespace Project
             }
         }
 
-        //private void ganti_Click(object sender, EventArgs e)
-        //{
-        //    OpenFileDialog dlg = new OpenFileDialog();
-        //    dlg.Filter = "*JPG FileStyleUriParser(*.jpg)|*.jpg|PNG Files(*png)|*.png|All Files(*.*)|*.*";
-            
-        //    if(dlg.ShowDialog() == DialogResult.OK)
-        //    {
-        //        string piclog = dlg.FileName.ToString();
-        //        pictureBox1.ImageLocation = piclog;
-        //    }
-        //}
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Dosen dosen = new Dosen();
-            this.Hide();
-            dosen.Show();
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Mahasiswa mahasiswa = new Mahasiswa();
-            mahasiswa.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GantiPass gp = new GantiPass();
-            gp.Show();
-        }
-
         private void radButton1_Click(object sender, EventArgs e)
         {
             this.Close();

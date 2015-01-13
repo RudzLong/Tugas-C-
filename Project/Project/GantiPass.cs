@@ -59,43 +59,6 @@ Persist Security Info=False;";
             connection.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Profile pf = new Profile();
-            pf.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.Connection = connection;
-                command.CommandText = "UPDATE Staff SET [Password]=@1 WHERE ID=@2";
-                command.Parameters.AddWithValue("@1", textBox2.Text);
-                command.Parameters.AddWithValue("@2", label2.Text);
-                if (textBox2.Text != textBox3.Text)
-                {
-                    MessageBox.Show("Password Tidak sama", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Ganti Password Sukses");
-                    this.Hide();
-                    Profile pf = new Profile();
-                    pf.Show();
-                }
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Error ganti Pass", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            connection.Close();
-        }
-
         private void radButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
